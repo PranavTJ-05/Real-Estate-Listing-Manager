@@ -1,4 +1,5 @@
-import { Route, Router, Routes } from 'react-router-dom'
+//import { Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.tsx'
 import Home from './pages/Home.tsx'
 import PropertyListing from './pages/Property_listing.tsx'
@@ -7,6 +8,7 @@ import Property from './pages/Property.tsx'
 import Contact from './pages/Contact.tsx'
 import Cart from './pages/Cart.tsx'
 import Footer from './components/Footer.tsx'
+import Listings from './pages/Listings.tsx'
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         {/* Add more routes as needed */}
         <Route path="*" element={<h1></h1>} />
+        <Route path="/listings" element={<Listings />} />
       </Routes>
       <Footer />
       {/* Footer is always displayed */}

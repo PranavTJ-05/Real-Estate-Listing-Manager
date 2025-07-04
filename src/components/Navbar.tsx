@@ -52,9 +52,9 @@ const Navbar = () => {
           onClick={() => {
             scrollTo(0, 0), setIsOpen(false)
           }}
-          to="/listing"
+          to="/listings"
         >
-          Listing
+          Listings
         </Link>
         <Link
           onClick={() => {
